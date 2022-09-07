@@ -19,6 +19,19 @@
                 <a href="#Contact">Contact Me</a>
             </div>
         </div>
+        
+        <div class="middle">
+            <img src="" id="image" width="500px">
 
+            <script type="text/javascript">
+                let image = document.getElementById('image');
+                let images = ["IMG/Jarom1.jpg","IMG/Jarom2.jpg","IMG/Jarom3.jpg","IMG/Jarom.jpg"]
+                setInterval(function(){
+                    let random = Math.floor(Math.random()* 4);
+                    image.src = images = images[random];
+                } ,1000);
+            </script>
+
+        </div>
     </body>
 </html>
