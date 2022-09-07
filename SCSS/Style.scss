@@ -1,18 +1,42 @@
-@use 'varablies';
-$light-green:#AAD922;
-$primary-green:#32936F;
-$black:#231F20;
+@import '_varablies';
+
+@mixin text($fontcolor: #fff, $fontsize:25px){
+    color:$fontcolor;
+    font-size:$fontsize;
+    text-decoration: none;
+
+}
 
 .header{
     width:100%;
-    margin:0px;
-    background-color: $primary-green;
+    
+    background-color: $primary-black;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
+}
+.left{
+    padding:20px;
+    padding-left:30px;
+}
+.right{
+    a{
+        @include text();
+        padding:20px;
+        transition:1s;
+        padding-right:30px;
+
+    }
+    a:hover{
+        color:$light-blue;
+        transition:1s;
+    }
 }
 
-.body{
-    margin:0px;
+body{
+    margin:0;
+    background-color:$secondary-black;
+    width:100%;
 }
 

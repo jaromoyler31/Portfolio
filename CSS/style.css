@@ -1,14 +1,33 @@
 .header {
   width: 100%;
-  margin: 0px;
-  background-color: #32936F;
+  background-color: #231F20;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.body {
-  margin: 0px;
+.left {
+  padding: 20px;
+  padding-left: 30px;
+}
+
+.right a {
+  color: #fff;
+  font-size: 25px;
+  text-decoration: none;
+  padding: 20px;
+  transition: 1s;
+  padding-right: 30px;
+}
+.right a:hover {
+  color: #1F6EEB;
+  transition: 1s;
+}
+
+body {
+  margin: 0;
+  background-color: #2E292A;
+  width: 100%;
 }
 
 /*# sourceMappingURL=Style.css.map */
