@@ -4,6 +4,7 @@
         <link rel="stylesheet" type="text/css" href="CSS/Style.css"/>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset ="UTF-8">
+        <script src="https://kit.fontawesome.com/4d02def751.js" crossorigin="anonymous"></script>
         <title>Jarom Oyler</title>
     </head>
     <body>
@@ -15,23 +16,96 @@
             </div>
             <div class="right">
                 <a href="#About">About Me</a>
-                <a href="#Projects">Projects</a>
                 <a href="#Contact">Contact Me</a>
+                <a href="#Projects">Projects</a>
+                
             </div>
         </div>
         
-        <div class="middle">
-            <img src="" id="image" width="500px">
-
+        <div class="middle">    
+            <img src="" id="image" width="200px" height="200px" class="fit" >
+            <a class="big">Web Developer</a>
+            <a>Jarom Oyler</a>
             <script type="text/javascript">
                 let image = document.getElementById('image');
-                let images = ["IMG/Jarom1.jpg","IMG/Jarom2.jpg","IMG/Jarom3.jpg","IMG/Jarom.jpg"]
+                let images = ["IMG/Jarom.jpg","IMG/Jarom1.jpg","IMG/Jarom2.jpg","IMG/Jarom3.jpg"]
                 setInterval(function(){
                     let random = Math.floor(Math.random()* 4);
-                    image.src = images = images[random];
-                } ,1000);
+                    image.src = images[random];
+                } ,2000);
             </script>
 
         </div>
+
+        <div class="quote">
+            <a>"Turns out all we Needed was a little more of this." -Stoick</a>
+            <a>"You Just Gestured to all of me." -Hiccup</a>
+            <a><i>How to trian your dragon</i></a>
+        </div>
+
+        <div class="section">
+                <div class="tittle">
+                    <a>More About Me</a>
+                    <hr>
+                    <div class="info">
+                        <a>I First Started to learn to code with GameMake. At first, it was very daunting. But after awhile I grew to love it and Dicided to learn more then block coding. So When I got to highschool I took Every single Compter programming class they offered at my highschool. I learned a lot and decided that i need to go and learn more so I applied to Mtech and Got in. At Mtech I am learn so much more and have grown to love coding more and more</a>
+                    </div>
+
+                    <div class="tittle1">
+                        <a>Education</a>
+                        <hr>
+                        <div class="info">
+                            <ul>
+                                <li>Timpview Highschool</li>
+                                <li>M-Tech</li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tittle1">
+                        <a>Contact Info</a>
+                        <hr>
+                        <div class="info">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <a>2553 N 530 E Provo Utah</a>
+                            <i class="fa-solid fa-envelope"></i>
+                            <a>jarroyler@gmail.com</a>
+                            <i class="fa-solid fa-phone"></i>
+                            <a>385-201-9711</a>
+                            <i class="fa-brands fa-github"></i>
+                            <a>jaromoyler31</a>
+                            <i class="fa-brands fa-instagram"></i>
+                            <a>None</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tittle">
+                    <a>Skills</a>
+                    <hr>
+                    <div class="info">
+                        <ul>
+                            <li>I am Willing to Learn What Ever I Need to Get a Project Done.</li>
+                            <li>I Can make a website after have a outline</li>
+                            <li>I Can will to Learn from my Co-Workers</li>
+                        </ul>
+                    </div>
+                    <div class="tittle1">
+                        <a>Work Experencess</a>
+                        <hr>
+                        <div class="info">
+                            <a>I have not done much when it comes down to Working for other companys but at Mtech we have learn lots of skills that i might use for in a real work scenario</a>
+                            <ul>
+                                <li>Working with a team</li>
+                                <li>Commucating with others </li>
+                                <li>Learning to Adapt and learn</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            
+        </div>
+        
     </body>
 </html>
