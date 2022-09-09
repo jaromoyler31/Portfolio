@@ -6,23 +6,29 @@
     text-decoration: none;
 
 }
-
+.filter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .header{
+
     width:100%;
     background-color: var.$primary-black;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 1;
     
 }
 .left{
-    padding:20px;
+    padding:var.$pat;
     padding-left:30px;
 }
 .right{
     a{
         @include text();
-        padding:20px;
+        padding:var.$pat;
         transition:1s;
         padding-right:30px;
 
@@ -50,14 +56,16 @@ body{
 
 
 .middle{
-    padding-top:50px;
     display:flex;
     flex-direction: column ;
     justify-content: center;
     align-items:center;
     text-align: center;
     @include text();
-    padding-bottom: 100px;
+    padding-bottom: 200px;
+    position: relative;
+    top: 100px;
+    
 
     .big{
         padding-top:10px;
@@ -70,37 +78,99 @@ body{
     background-color: var.$light-blue;
     color:#fff;
     @include text();
-    padding:20px;
-    width:fit-content;
+    padding:var.$pat;
+    margin-top:var.$pat;
+    margin-top:var.$pat;
     text-align:center;
-    display: flex;
+    @extend .filter;
     flex-direction: column;
-    position: relative;
-    left:28%;
+    
     
     i{
-        @include text(var.$primary-white ,20px);
+        @include text(var.$primary-white ,var.$pat);
     }
 }
 
 .section{
     display: flex;
+    margin-bottom:50px;
+    margin-top:50px;
 
 }
 .tittle{
     padding-left: 5%;
     padding-right:5%;
     position:relative;
-    padding-top:80px;
+    
     width:45%;
     @include text();
+    .center{
+        @include text(var.$light-blue, 40px);
+        text-align: center;
+    }
 
 }
+
 .tittle1{
     position:relative;
     padding-top:80px;
     width:100%;
     @include text();
     padding-top:50px;
+    .center{
+        @include text(var.$light-blue, 40px);
+        text-align:center;
+    }
+    
+}
+.tittle2{
+    padding-left: 5%;
+    padding-right:5%;
+    position:relative;
+    padding-top:80px;
+    width:90%;
+    @include text();
+    .center{
+        @include text(var.$light-blue, 40px);
+        text-align: center;
+    }
 
+}
+
+ul.nodot{
+    
+    list-style-type:none;
+}
+ul{
+    li{
+        padding-bottom:10px;
+    }
+}
+
+.links{
+    @include text();
+    :hover{
+        transition: 1s;
+        @include text(var.$light-blue);
+        cursor: pointer;
+    }
+}
+
+.pics{
+    margin-top:10px;
+    border: 6px solid var.$light-blue;
+    object-fit: cover;
+    opacity: .4;
+    transition: 1s;
+    
+    
+}
+.pics:hover{
+    opacity: 1.0;
+    transition: 1s;
+}
+
+.project{
+    display: flex;
+    justify-content: space-around;
 }

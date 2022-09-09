@@ -1,9 +1,16 @@
+.filter, .quote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .header {
   width: 100%;
   background-color: #231F20;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 1;
 }
 
 .left {
@@ -20,7 +27,7 @@
   padding-right: 30px;
 }
 .right a:hover {
-  color: #1F6EEB;
+  color: #1f6eeb;
   transition: 1s;
 }
 
@@ -38,7 +45,6 @@ body {
 }
 
 .middle {
-  padding-top: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -47,7 +53,9 @@ body {
   color: #fff;
   font-size: 25px;
   text-decoration: none;
-  padding-bottom: 100px;
+  padding-bottom: 200px;
+  position: relative;
+  top: 100px;
 }
 .middle .big {
   padding-top: 10px;
@@ -57,18 +65,16 @@ body {
 }
 
 .quote {
-  background-color: #1F6EEB;
+  background-color: #1f6eeb;
   color: #fff;
   color: #fff;
   font-size: 25px;
   text-decoration: none;
   padding: 20px;
-  width: fit-content;
+  margin-top: 20px;
+  margin-top: 20px;
   text-align: center;
-  display: flex;
   flex-direction: column;
-  position: relative;
-  left: 28%;
 }
 .quote i {
   color: #fff;
@@ -78,17 +84,24 @@ body {
 
 .section {
   display: flex;
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
 
 .tittle {
   padding-left: 5%;
   padding-right: 5%;
   position: relative;
-  padding-top: 80px;
   width: 45%;
   color: #fff;
   font-size: 25px;
   text-decoration: none;
+}
+.tittle .center {
+  color: #1f6eeb;
+  font-size: 40px;
+  text-decoration: none;
+  text-align: center;
 }
 
 .tittle1 {
@@ -99,6 +112,68 @@ body {
   font-size: 25px;
   text-decoration: none;
   padding-top: 50px;
+}
+.tittle1 .center {
+  color: #1f6eeb;
+  font-size: 40px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.tittle2 {
+  padding-left: 5%;
+  padding-right: 5%;
+  position: relative;
+  padding-top: 80px;
+  width: 90%;
+  color: #fff;
+  font-size: 25px;
+  text-decoration: none;
+}
+.tittle2 .center {
+  color: #1f6eeb;
+  font-size: 40px;
+  text-decoration: none;
+  text-align: center;
+}
+
+ul.nodot {
+  list-style-type: none;
+}
+
+ul li {
+  padding-bottom: 10px;
+}
+
+.links {
+  color: #fff;
+  font-size: 25px;
+  text-decoration: none;
+}
+.links :hover {
+  transition: 1s;
+  color: #1f6eeb;
+  font-size: 25px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.pics {
+  margin-top: 10px;
+  border: 6px solid #1f6eeb;
+  object-fit: cover;
+  opacity: 0.4;
+  transition: 1s;
+}
+
+.pics:hover {
+  opacity: 1;
+  transition: 1s;
+}
+
+.project {
+  display: flex;
+  justify-content: space-around;
 }
 
 /*# sourceMappingURL=Style.css.map */
