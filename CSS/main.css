@@ -172,7 +172,7 @@ ul li {
 
 .project {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=Style.css.map */
