@@ -6,6 +6,10 @@
     text-decoration: none;
 
 }
+
+@mixin speed($speed:1s){    
+    transition:$speed;
+}
 .filter{
     display: flex;
     justify-content: center;
@@ -35,7 +39,7 @@
     }
     a:hover{
         color:var.$light-blue;
-        transition:1s;
+        @include speed();
     }
 }
 
@@ -150,7 +154,7 @@ ul{
 .links{
     @include text();
     :hover{
-        transition: 1s;
+        @include speed();
         @include text(var.$light-blue);
         cursor: pointer;
     }
@@ -167,7 +171,7 @@ ul{
 }
 .pics:hover{
     opacity: 1.0;
-    transition: 1s;
+    @include speed();
 }
 
 .project{
