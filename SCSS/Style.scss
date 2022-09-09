@@ -68,7 +68,7 @@ body{
     @include text();
     padding-bottom: 200px;
     position: relative;
-    top: 100px;
+    top: 120px;
     
 
     .big{
@@ -84,7 +84,6 @@ body{
     @include text();
     padding:var.$pat;
     margin-top:var.$pat;
-    margin-top:var.$pat;
     text-align:center;
     @extend .filter;
     flex-direction: column;
@@ -97,7 +96,7 @@ body{
 
 .section{
     display: flex;
-    margin-bottom:50px;
+    margin-bottom:70px;
     margin-top:50px;
 
 }
@@ -120,7 +119,7 @@ body{
     padding-top:80px;
     width:100%;
     @include text();
-    padding-top:50px;
+    padding-top:70px;
     .center{
         @include text(var.$light-blue, 40px);
         text-align:center;
