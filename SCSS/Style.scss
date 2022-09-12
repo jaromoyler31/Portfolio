@@ -27,7 +27,7 @@
 }
 .left{
     padding:var.$pat;
-    padding-left:30px;
+    padding-left:40px;
 }
 .right{
     a{
@@ -98,13 +98,13 @@ body{
     display: flex;
     margin-bottom:70px;
     margin-top:50px;
+    flex-wrap: wrap;
 
 }
 .tittle{
     padding-left: 5%;
     padding-right:5%;
     position:relative;
-    
     width:45%;
     @include text();
     .center{
@@ -164,16 +164,15 @@ ul{
     border: 6px solid var.$light-blue;
     object-fit: cover;
     opacity: .4;
-    transition: 1s;
-    
-    
+    transition: 1s;    
 }
 .pics:hover{
     opacity: 1.0;
     @include speed();
 }
 
-.project{
+#projects{
     display: flex;
-    justify-content: space-around;
+
+    justify-content: center;
 }
